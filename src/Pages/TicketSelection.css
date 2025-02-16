@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ticketSelection {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #08252b;
+  border: 1px solid #0e464f;
+  border-radius: 32px;
+  height: 375px;
+  width: 340px;
+  z-index: 1;
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.sectionTitle {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 8px;
+
+  border-width: 0px 2px 2px 2px;
+  border-style: solid;
+  border-color: #07373f;
+  backdrop-filter: blur(7px);
+  border-radius: 24px;
+  background: radial-gradient(
+      103.64% 57.39% at 14.02% 32.06%,
+      rgba(36, 160, 181, 0.2) 0%,
+      rgba(36, 160, 181, 0) 100%
+    ),
+    rgba(10, 12, 17, 0.1);
+  align-self: stretch;
+
+  height: 110px;
+  width: 300px;
+}
+.sectionTitle h1 {
+  position: relative;
+  top: -15px;
+  font-family: "Road Rage";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100%;
+
+  color: #fafafa;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.sectionTitle p {
+  position: relative;
+  top: -20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  text-align: center;
+  font-size: 9px;
+  line-height: 150%;
+
+  color: #fafafa;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  width: 200px;
+}
+.date {
+  position: relative;
+  top: -38px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  margin-top: -3px;
+}
+.break {
+  position: relative;
+  top: 18px;
+
+  width: 300px;
+  height: 4px;
+
+  background: #07373f;
+}
+
+/* Radio 4 */
+
+/* 
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 12px;
+gap: 12px;
+
+width: 158px;
+height: 110px;
+
+background: #12464E;
+border: 1px solid #197686;
+border-radius: 12px; */
+
