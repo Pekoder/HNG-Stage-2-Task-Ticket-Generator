@@ -30,7 +30,7 @@ function BackComponent({ title, step }) {
             <div
               className="progress"
               style={{
-                width: `${step * 38}%`,
+                width: `${step * 33.33}%`,
               }}
             ></div>
           </div>

@@ -1,6 +1,15 @@
 import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import BackComponent from "./BackComponent";
+import styled from "styled-components";
+
+const Comp = styled.div`
+  position: relative;
+  top: -95%; 
+  @media (min-width: 600px) {
+    top: -65%;
+  }
+`;
 
 function MainLayout() {
   const location = useLocation();
@@ -26,28 +35,22 @@ function MainLayout() {
 
   return (
     <div
-    //  style={{
-    //   display: 'flex',
-    //   flexDirection: 'column',
-    //   alignItems: 'center',
-    //   minHeight: '100vh',
-    //   padding: '20px',
-    //   maxWidth: '1200px',
-    //   margin: '0 auto'
-    // }}
+      style={{
+        width: "100%",
+        height: "100vh",
+      }}
     >
       <div
-      //  style={{
-      //   width: '100%',
-      //   maxWidth: '800px',
-      //   marginBottom: '40px'
-      // }}
+        style={{
+          position: "relative",
+          top: "0%",
+        }}
       >
         <BackComponent title={title} step={step} />
       </div>
-      <div>
+      <Comp>
         <Outlet />
-      </div>
+      </Comp>
     </div>
   );
 }

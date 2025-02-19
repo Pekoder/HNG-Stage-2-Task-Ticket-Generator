@@ -139,6 +139,11 @@ nav button:hover {
     }
    
 }
+@media (max-width: 600px) {
+    .backComponent .wrapper{
+        height: 700px;
+    }
+  }
 @media (min-width: 700px) {
     .backComponent .wrapper {
     margin-top: 18%;
