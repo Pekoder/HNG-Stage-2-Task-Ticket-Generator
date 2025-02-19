@@ -151,17 +151,17 @@ input[type="radio"]:checked + label {
   background-color: #76c7c0;
   color: white; 
 } */
-
+/* 
 @media (min-width: 550px) {
   .ticketSelection {
     top: 33%;
   }
-}
+} */
 @media (max-width: 600px) {
-  .ticketSelection {
+  /* .ticketSelection {
     top: 20%;
 
-  }
+  } */
   .radio-group{
     
     grid-template-columns: repeat(1,1fr);

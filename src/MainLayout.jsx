@@ -4,10 +4,11 @@ import BackComponent from "./BackComponent";
 import styled from "styled-components";
 
 const Comp = styled.div`
-  position: relative;
-  top: -95%; 
+  width: 100%;
+  position: absolute;
+  top: 33%;
   @media (min-width: 600px) {
-    top: -65%;
+    top: 36%;
   }
 `;
 
