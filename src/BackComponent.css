@@ -13,6 +13,7 @@ body {
     width: 100%;
     height: 100vh;
     background: radial-gradient(52.52% 32.71% at 50% 97.66%, rgba(36, 160, 181, 0.2) 0%, rgba(36, 160, 181, 0) 100%), #02191D;
+    background-size:cover;
 }
 
 .backComponent {
@@ -81,7 +82,7 @@ nav button:hover {
     border: 1px solid #0E464F;
     border-radius: 20px;
     width: 100%;
-    height:500px;
+    height:85vh;
     padding: 30px;
     margin-top:17%;
 
@@ -141,7 +142,7 @@ nav button:hover {
 }
 @media (max-width: 600px) {
     .backComponent .wrapper{
-        height: 700px;
+        height: 780px;
     }
   }
 @media (min-width: 700px) {

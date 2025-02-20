@@ -110,7 +110,7 @@
 }
 .ticketOptions p {
   font-size: 0.9rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   font-weight: 100;
   margin-bottom: 5px;
 }
@@ -141,17 +141,95 @@ input[type="radio"] {
   transition: background-color 0.3s, color 0.3s;
   height: 100%;
 }
+.radio-group label:hover{
+
+position: relative;
+
+background: #2C545B;
+border: 1px solid #197686;
+border-radius: 12px;
+
+}
+
+
+input[type="radio"]:checked + label {
+
+background: #12464E;
+border: 1px solid #197686;
+
+}
 .radio-group h1 {
   font-size: 1.1rem;
   font-weight: 500;
 }
-/* 
+.ticketNumber{
+  position:relative;
+  top:30px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.ticketNumber label{
+  font-size: 0.9rem;
+  letter-spacing: 0.8px;
+  font-weight: 100;
+}
+.ticketNumber input{
+  color: #fafafa;
+  border: 1px solid #07373F;
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+}
+.ticketNumber input::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+.buttons{
+position:relative;
+top:40px;
+  display: flex;
+  flex-direction: row;
+  gap:12px;
+  width:100%;
+  margin-bottom:20px;
+}
+.buttons button{
 
-input[type="radio"]:checked + label {
-  background-color: #76c7c0;
-  color: white; 
-} */
-/* 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height:30px;
+  width:100%;
+  border-radius: 8px;
+  outline:none;
+  font-family: 'JejuMyeongjo';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 150%;
+  cursor: pointer;
+}
+.buttons .one{
+ background:transparent;
+  border: 1px solid #24A0B5;
+  color:#24a0b5;
+}
+.buttons .two{
+color:white;
+background: #24A0B5;
+border-radius: 8px;
+border:none;
+outline:none;
+
+}
+ /*
+
 @media (min-width: 550px) {
   .ticketSelection {
     top: 33%;
@@ -161,42 +239,10 @@ input[type="radio"]:checked + label {
   /* .ticketSelection {
     top: 20%;
 
-  } */
+  }  */
   .radio-group{
     
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(3,1fr);
   }
 }
-/* 
-
-box-sizing: border-box;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-gap: 16px;
-
-width: 556px;
-height: 142px;
-
-
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-
-*/
-/* Radio 4 */
-
-/* 
-
-gap: 12px;
-
-width: 158px;
-height: 110px;
-
-
-*/
