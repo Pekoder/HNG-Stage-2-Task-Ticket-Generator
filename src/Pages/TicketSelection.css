@@ -204,14 +204,14 @@ top:40px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  height:30px;
+  height:33px;
   width:100%;
-  border-radius: 8px;
+  border-radius: 7px;
   outline:none;
   font-family: 'JejuMyeongjo';
   font-style: normal;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
   cursor: pointer;
 }

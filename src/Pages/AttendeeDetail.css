@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.attendeeDetail {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 620px;
+  top: 27%;
+  color: #fafafa;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #08252b;
+  border: 1px solid #0e464f;
+  border-radius: 32px;
+  height: max-content;
+  padding-bottom: 20px;
+}
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  height: fit-content;
+}
+.imageUploader {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+
+  width: 100%;
+  height: 180px;
+
+  background: #052228;
+  border: 1px solid #07373f;
+  border-radius: 24px;
+}
+.imageUploader p {
+  margin-bottom: 10px;
+}
+.imageUploader .image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100%;
+  height: 110px;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+.imageUploader .image input {
+  display: none;
+}
+.imageUploader .image label {
+  cursor: grab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  gap: 1px;
+
+  width: 140px;
+  height: 140px;
+
+  background: #0e464f;
+  border: 4px solid rgba(36, 160, 181, 0.5);
+  border-radius: 32px;
+}
+
+.imageUploader label p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 150%;
+  text-align: center;
+
+  color: #fafafa;
+}
+.imageUploader label img {
+  width: 32px;
+  height: 32px;
+}
+.break {
+  position: relative;
+  top: 18px;
+
+  width: 100%;
+  height: 4px;
+
+  background: #07373f;
+}
+form{
+    position: relative;
+    top: 25px;
+    
+    margin-bottom: 60px;
+}
+label {
+  font-family: "Roboto";
+}
+form .name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 100%;
+  height: 55px;
+}
+form label p{
+  font-weight: 100;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0.6px;
+}
+form input{
+    outline:none;
+}
+form .name input{
+
+width: 100%;
+background: transparent;
+padding: 7px;
+
+height: 48px;
+color:#fafafa;
+font-size: 1rem;
+border: 1px solid #07373F;
+border-radius: 9px;
+
+
+}
+form .email{
+
+    position: relative;
+    top:14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+form .email input{
+width: 100%;
+background: transparent;
+padding: 7px;
+
+height: 40px;
+color:#fafafa;
+font-size: 1rem;
+border: 1px solid #07373F;
+border-radius: 9px;
+}
+form .textarea{
+    position: relative;
+    top:18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+form .textarea input{
+    width: 100%;
+background: transparent;
+padding: 7px;
+
+height: 55px;
+color:#fafafa;
+font-size: 1rem;
+border: 1px solid #07373F;
+border-radius: 9px;
+}
+.buttons{
+    position:relative;
+    top:40px;
+      display: flex;
+      flex-direction: row;
+      gap:12px;
+      width:100%;
+      margin-bottom:20px;
+      margin-top:15px;
+    }
+    .buttons button{
+    
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      height:33px;
+      width:100%;
+      border-radius: 7px;
+      outline:none;
+      font-family: 'JejuMyeongjo';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 14px;
+      line-height: 150%;
+      cursor: pointer;
+    }
+    .buttons .one{
+     background:transparent;
+      border: 1px solid #24A0B5;
+      color:#24a0b5;
+    }
+    .buttons .two{
+    color:white;
+    background: #24A0B5;
+    border-radius: 8px;
+    border:none;
+    outline:none;
+    
+    }
