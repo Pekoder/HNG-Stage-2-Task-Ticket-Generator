@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Comp = styled.div`
   width: 100%;
   position: absolute;
-  top: 33%;
+  top: 21%;
   @media (min-width: 600px) {
     top: 36%;
   }
