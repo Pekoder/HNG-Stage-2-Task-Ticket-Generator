@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 
 function AttendeeDetail() {
   const navigate = useNavigate();
+  const imge = useRef(null)
+  console.log(imge);
+  
 
   return (
     <div className="attendeeDetail">
@@ -14,11 +17,11 @@ function AttendeeDetail() {
               <p>Upload profile picture</p>
               <div className="image">
                 <label htmlFor='file-upload'>
+                  <img src=""/>
               <img src={icon} alt="" />
-
               <p>Drag & drop or click to upload</p>
                 </label>
-              <input type="file" id='file-upload' accept="image/*" />
+              <input type="file" id='file-upload' ref={imge} accept="image/*" />
               </div>
               <div className="icon">
 
