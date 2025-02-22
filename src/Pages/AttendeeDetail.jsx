@@ -8,7 +8,7 @@ import axios from "axios";
 function AttendeeDetail() {
   const [loading, setLoading] = useState(false);
   console.log(loading);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   const [fileUrl, setFileUrl] = useState(c => c + "");
   const imge = useRef(null);
   // console.log(imge);
