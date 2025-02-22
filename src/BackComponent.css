@@ -82,7 +82,7 @@ nav button:hover {
     border: 1px solid #0E464F;
     border-radius: 20px;
     width: 100%;
-    height:85vh;
+    height:80vh;
     padding: 30px;
     margin-top:17%;
 
@@ -142,7 +142,7 @@ nav button:hover {
 }
 @media (max-width: 600px) {
     .backComponent .wrapper{
-        height: 90vh;
+        height: 60vh;
     }
   }
 @media (min-width: 700px) {
