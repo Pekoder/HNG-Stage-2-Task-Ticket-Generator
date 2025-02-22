@@ -1,0 +1,160 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(52.52% 32.71% at 50% 97.66%, rgba(36, 160, 181, 0.2) 0%, rgba(36, 160, 181, 0) 100%), #02191D;
+    background-size:cover;
+}
+
+.backComponent {
+    width: 100%;
+    min-width:350px;
+    max-width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+    
+    position: absolute;
+    width: 90%; 
+    min-width: 350px;
+    max-width:700px;
+    height: 50px;
+    left: 50%;
+    top: 24px; 
+    transform: translateX(-50%); 
+    
+    background: rgba(5, 37, 44, 0.4);
+    border: 1px solid #197686;
+    backdrop-filter: blur(2px);
+    border-radius: 14px; 
+}
+
+nav .nav-logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+nav .nav-logo img {
+    width: 32px;
+    height: auto;
+}
+
+nav button {
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    padding: 8px 12px;
+    font-family: 'Jeju Myeongjo';
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid rgba(213, 234, 0, 0.1);
+    text-transform: uppercase;
+    color: #0A0C11;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #c5c5c5;
+}
+
+.backComponent .wrapper {
+    display: flex;
+    justify-content: center;
+    background: #041E23;
+    border: 1px solid #0E464F;
+    border-radius: 20px;
+    width: 100%;
+    height:85vh;
+    padding: 30px;
+    margin-top:17%;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pageLabel {
+    position: relative;
+    color: #FAFAFA;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pageLabel h1 {
+    font-family: 'Jeju Myeongjo', serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    line-height: 32px;
+}
+
+.pageLabel p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 150%;
+    color: #FAFAFA;
+}
+
+.progressBar {
+    height: 4px;
+    width: 100%;
+    background: #0E464F;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progressBar .progress {
+    height: 100%;
+    border-radius: 5px;
+    background: #24A0B5;
+    transition: width 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    .backComponent .wrapper {
+    margin-top: 28%;
+    }
+   
+}
+@media (max-width: 600px) {
+    .backComponent .wrapper{
+        height: 90vh;
+    }
+  }
+@media (min-width: 700px) {
+    .backComponent .wrapper {
+    margin-top: 18%;
+    }
+   
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
+}
