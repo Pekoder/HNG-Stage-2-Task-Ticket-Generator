@@ -138,11 +138,11 @@ nav button:hover {
     .backComponent .wrapper {
     margin-top: 28%;
     }
-   
+    
 }
 @media (max-width: 600px) {
     .backComponent .wrapper{
-        height: 60vh;
+        height: 90vh;
     }
   }
 @media (min-width: 700px) {

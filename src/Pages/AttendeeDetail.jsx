@@ -41,9 +41,14 @@ function AttendeeDetail() {
                 {loading ? <p>Uploading...</p> : <img 
                 src={fileUrl}
                 // src={testImg}
-                className="profile-pic" alt="pic"/>} 
+                
+                className="profile-pic"/>} 
                 <img src={icon} alt="icon" />
                 <p>Drag & drop or click to upload</p>
+                <div className="overlay">
+                <img src={icon} alt="icon" />
+                <p>Drag & drop or click to upload</p>
+                </div>
               </label>
               <input
                 type="file"

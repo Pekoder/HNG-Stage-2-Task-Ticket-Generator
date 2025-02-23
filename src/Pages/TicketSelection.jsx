@@ -95,7 +95,7 @@ function TicketSelection({ onOptionChange }) {
             </datalist>
           </div>
           <div className="buttons">
-            <button className="one" onClick={() => navigate("/")}>
+            <button className="one" onClick={() => window.reload }>
               Cancel
             </button>
             <button className="two" onClick={() => navigate("/AttendeeDetail")}>

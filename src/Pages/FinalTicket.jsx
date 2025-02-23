@@ -2,7 +2,9 @@ import React from 'react'
 
 function FinalTicket() {
   return (
-    <div>FinalTicket</div>
+    <div className='finalTicket'>
+      
+      </div>
   )
 }
 
