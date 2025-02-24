@@ -1,11 +1,65 @@
-/* 
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      width: 100%;
+      height: 100vh;
+}
+.finalTicket {
+      background: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      max-width: 620px;
+      top: 27%;
+      color: #fafafa;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background:none;
+      height: max-content;
+      padding: 20px;
+      font-style: normal;
+      text-align: center;
+      font-family: 'Roboto';
+    }
 
-position: absolute;
-width: 300px;
-height: 600px;
-left: 975px;
-top: 425px;
+.content p{
+      margin-top: 11px;
+      font-size: 0.8rem;
+      font-weight: 100;
+      letter-spacing: 0.2px;
+      line-height: 150%;
+}
 
-background: url(image.png);
+.content .ticket{
+     margin-top: 30px;
+}
 
-      */
+.content .detail{
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 14px;
+
+      background: rgba(3, 30, 33, 0.1);
+      border: 1px solid #24A0B5;
+      backdrop-filter: blur(2px);
+      border-radius: 16px;
+      width: 260px;
+      height: 446px;
+      position: absolute;
+      top: 120px;
+}
+
+.content .barCode{
+      margin-top: -90px;
+}
