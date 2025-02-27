@@ -142,7 +142,7 @@ nav button:hover {
 }
 @media (max-width: 600px) {
     .backComponent .wrapper{
-        height: 90vh;
+        height: 68vh;
     }
   }
 @media (min-width: 700px) {

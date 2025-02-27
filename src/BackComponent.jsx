@@ -2,12 +2,14 @@ import React from "react";
 import "./BackComponent.css";
 import thumb from "./thumb.png";
 import ticz from "./ticz.png";
-import { useNavigate,useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function BackComponent({ title, step }) {
   const navigate = useNavigate();
   const location = useLocation();
- const heigthStyle = (location.pathname === "/AttendeeDetail" && "850px") || (location.pathname === "/Ready" && "900px")
+  const heigthStyle =
+    (location.pathname === "/AttendeeDetail" && "680px") ||
+    (location.pathname === "/Ready" && "900px");
   return (
     <div className="backComponent">
       <nav>
@@ -19,10 +21,11 @@ function BackComponent({ title, step }) {
           My Ticket
         </button>
       </nav>
-      <div className="wrapper"
-      style={{
-         height: heigthStyle,
-      }}
+      <div
+        className="wrapper"
+        style={{
+          height: heigthStyle,
+        }}
       >
         <div className="header">
           <div className="pageLabel">

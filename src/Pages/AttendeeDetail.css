@@ -85,13 +85,12 @@
 .image label .profile-pic{
 
   position: absolute;
-  background-size: cover;
   width: 140px;
   height: 140px;
   border: 4px solid rgba(36, 160, 181, 0.5);
   border-radius: 32px;
+  
   background-size: cover;
-
   object-fit: cover;  
   object-position: center;
 
@@ -194,11 +193,8 @@ color:#fafafa;
 font-size: 1rem;
 border: 1px solid #07373F;
 border-radius: 9px;
-
-
 }
 form .email{
-
     position: relative;
     top:14px;
     display: flex;
@@ -278,4 +274,9 @@ border-radius: 9px;
     border:none;
     outline:none;
     
+    }
+    @media screen and (max-width:600px) {
+      .image label:hover .overlay {
+        opacity: 0; 
+      }
     }

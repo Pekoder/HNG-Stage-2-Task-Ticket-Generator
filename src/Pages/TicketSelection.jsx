@@ -2,17 +2,34 @@ import React, { useState } from "react";
 import "./TicketSelection.css";
 import { useNavigate } from "react-router-dom";
 
-function TicketSelection({ onOptionChange }) {
+function TicketSelection() {
   const navigate = useNavigate();
+  // const location = useLocation();
   const [selectedOption, setSelectedOption] = useState("");
-  console.log(selectedOption);
   const [selectedNumber, setSelectedNumber] = useState(1);
-
   const handleChange = (event) => {
     const value = event.target.value;
-    setSelectedOption(value); // Update local state
-    // onOptionChange(value); // Notify the parent component
+    setSelectedOption(value);
   };
+const handleNumberChange = (event) => {
+    const value = event.target.value;
+    setSelectedNumber(value);
+  
+}
+const handleSubmit = () => {
+  localStorage.setItem("selectedOption", selectedOption);
+  localStorage.setItem("selectedNumber", selectedNumber);
+
+  
+const selData ={
+  option :selectedOption,
+  number:selectedNumber,
+}
+
+  navigate("/AttendeeDetail", {
+    state: selData,
+  });
+};
 
   return (
     <div className="ticketSelection">
@@ -85,8 +102,7 @@ function TicketSelection({ onOptionChange }) {
               list="numbers"
               id="number-picker"
               value={selectedNumber}
-              onChange={(e) => setSelectedNumber(e.target.value)}
-              // placeholder="Select a number"
+              onChange={handleNumberChange}
             />
             <datalist id="numbers">
               {[1, 2].map((num) => (
@@ -95,10 +111,10 @@ function TicketSelection({ onOptionChange }) {
             </datalist>
           </div>
           <div className="buttons">
-            <button className="one" onClick={() => window.reload }>
+            <button className="one" onClick={() => window.reload}>
               Cancel
             </button>
-            <button className="two" onClick={() => navigate("/AttendeeDetail")}>
+            <button className="two" onClick={handleSubmit}>
               Next
             </button>
           </div>

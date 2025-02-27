@@ -8,7 +8,7 @@ function AttendeeDetail() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const [fileUrl, setFileUrl] = useState((c) => c + "");
-
+console.log(fileUrl)
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -24,6 +24,9 @@ function AttendeeDetail() {
     );
     const uploadedUrl = res.data.url;
     setFileUrl(uploadedUrl);
+    setFormData({ ...formData, fileUrl: uploadedUrl });
+    localStorage.setItem("conferenceForm", JSON.stringify({ ...formData, fileUrl: uploadedUrl }));
+
     setLoading(false);
   };
 
@@ -35,9 +38,11 @@ const storedData = JSON.parse(localStorage.getItem("conferenceForm")) || {
   username: "",
   email: "",
   textArea: "",
+  fileUrl: "",
 };
 
-const [formData, setFormData] = useState(storedData);  const [formErrors, setFormErrors] = useState({});
+const [formData, setFormData] = useState(storedData);  
+const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
@@ -57,11 +62,11 @@ const [formData, setFormData] = useState(storedData);  const [formErrors, setFor
     setSubmittedData(formData);
     localStorage.setItem("submittedTicket", JSON.stringify(formData));
 
-    setFormData({ username: "", email: "", textArea: "" });
+    setFormData({ username: "", email: "", textArea: "", fileUrl:"" });
 
     if (Object.keys(errors).length !== 0) {
       console.log(errors); 
-    }else{
+    }else{ 
       navigate("/Ready",{ state: formData })
     }
   };
@@ -105,6 +110,9 @@ const [formData, setFormData] = useState(storedData);  const [formErrors, setFor
     } else if(!regex.test(values.email)){
       errors.email = "This is not a valid email";
     }
+    if (!values.fileUrl) {
+      errors.fileUrl = "Upload an image!";
+    }
 
     return errors;
   };
@@ -121,7 +129,10 @@ const [formData, setFormData] = useState(storedData);  const [formErrors, setFor
                 {loading ? (
                   <p>Uploading...</p>
                 ) : (
-                  <img src={fileUrl} alt="" className="profile-pic" />
+                  <img src={fileUrl} 
+                  value={formData.fileUrl}
+                  onChange={handleChange}
+                  alt="" className="profile-pic" />
                 )}
                 <img src={icon} alt="icon" />
                 <p>Drag & drop or click to upload</p>
@@ -139,6 +150,11 @@ const [formData, setFormData] = useState(storedData);  const [formErrors, setFor
             </div>
             <div className="icon"></div>
           </div>
+          {formErrors.fileUrl && (
+                <p role="alert" style={{ color: "red" }}>
+                  {formErrors.fileUrl}
+                </p>
+              )}
           <div className="break" />
           <form onSubmit={handleSubmit} aria-labelledby="form-title">
             <div className="name">
